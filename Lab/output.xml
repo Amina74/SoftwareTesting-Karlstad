@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on darwin)" generated="20220406 20:51:32.146" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="/Users/aminahamza/School/Year3/Semester2/SoftwareTesting/Lab/Tests/Login.robot">
+<test id="s1-t1" name="Verify Successful Login to OrangeHRM" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20220406 20:51:32.503" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220406 20:51:32.503" endtime="20220406 20:51:44.464"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220406 20:51:44.465" endtime="20220406 20:51:44.506"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20220406 20:51:44.506" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20220406 20:51:44.506" endtime="20220406 20:51:44.648"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>admin123</arg>
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<msg timestamp="20220406 20:51:44.648" level="INFO">Typing password into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20220406 20:51:44.648" endtime="20220406 20:51:44.734"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:btnLogin</arg>
+<doc>Click element identified by ``locator``.</doc>
+<msg timestamp="20220406 20:51:44.735" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20220406 20:51:44.735" endtime="20220406 20:51:49.577"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>id:welcome</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220406 20:51:49.602" level="INFO">Element 'id:welcome' is displayed.</msg>
+<status status="PASS" starttime="20220406 20:51:49.578" endtime="20220406 20:51:49.602"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220406 20:51:49.603" endtime="20220406 20:51:49.731"/>
+</kw>
+<doc>This test case verifies that user is able to successfully Login to OrangeHRM</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220406 20:51:32.501" endtime="20220406 20:51:49.732"/>
+</test>
+<test id="s1-t2" name="Verify Successful Login to OrangeHRM" line="20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20220406 20:51:49.734" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220406 20:51:49.734" endtime="20220406 20:51:58.903"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220406 20:51:58.903" endtime="20220406 20:51:58.924"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20220406 20:51:58.925" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20220406 20:51:58.924" endtime="20220406 20:51:59.042"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>Admin</arg>
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<msg timestamp="20220406 20:51:59.043" level="INFO">Typing password into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20220406 20:51:59.042" endtime="20220406 20:51:59.117"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:btnLogin</arg>
+<doc>Click element identified by ``locator``.</doc>
+<msg timestamp="20220406 20:51:59.118" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20220406 20:51:59.118" endtime="20220406 20:52:01.388"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>id:welcome</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20220406 20:52:01.711" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220406 20:52:01.399" endtime="20220406 20:52:01.712"/>
+</kw>
+<msg timestamp="20220406 20:52:01.712" level="FAIL">Element with locator 'id:welcome' not found.</msg>
+<status status="FAIL" starttime="20220406 20:52:01.388" endtime="20220406 20:52:01.719"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220406 20:52:01.719" endtime="20220406 20:52:01.719"/>
+</kw>
+<doc>This test case verifies that user is able to successfully Login to OrangeHRM</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220406 20:51:49.733" endtime="20220406 20:52:01.720">Element with locator 'id:welcome' not found.</status>
+</test>
+<test id="s1-t3" name="Verify Successful Login to the-internet.herokuapp" line="31">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://the-internet.herokuapp.com/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20220406 20:52:01.721" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<status status="PASS" starttime="20220406 20:52:01.721" endtime="20220406 20:53:10.593"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220406 20:53:10.594" endtime="20220406 20:53:10.760"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20220406 20:53:10.760" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20220406 20:53:10.760" endtime="20220406 20:53:10.977"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<msg timestamp="20220406 20:53:10.977" level="INFO">Typing password into text field 'id:password'.</msg>
+<status status="PASS" starttime="20220406 20:53:10.977" endtime="20220406 20:53:11.140"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:button[type="submit"]</arg>
+<doc>Click element identified by ``locator``.</doc>
+<msg timestamp="20220406 20:53:11.141" level="INFO">Clicking element 'css:button[type="submit"]'.</msg>
+<status status="PASS" starttime="20220406 20:53:11.141" endtime="20220406 20:53:11.907"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css:[href="/logout"]</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220406 20:53:11.937" level="INFO">Element 'css:[href="/logout"]' is displayed.</msg>
+<status status="PASS" starttime="20220406 20:53:11.907" endtime="20220406 20:53:11.937"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220406 20:53:11.938" endtime="20220406 20:53:12.040"/>
+</kw>
+<doc>This test case verifies that user is able to successfully Login to the-internet.herokuapp</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220406 20:52:01.720" endtime="20220406 20:53:12.041"/>
+</test>
+<test id="s1-t4" name="Verify Successful Login to the-internet.herokuapp" line="42">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://the-internet.herokuapp.com/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<msg timestamp="20220406 20:53:12.044" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<status status="PASS" starttime="20220406 20:53:12.043" endtime="20220406 20:53:35.199"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>timeout=5</arg>
+<doc>Waits until element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220406 20:53:35.200" endtime="20220406 20:53:35.227"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>tomsmith2</arg>
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<msg timestamp="20220406 20:53:35.227" level="INFO">Typing text 'tomsmith2' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20220406 20:53:35.227" endtime="20220406 20:53:35.334"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<msg timestamp="20220406 20:53:35.334" level="INFO">Typing password into text field 'id:password'.</msg>
+<status status="PASS" starttime="20220406 20:53:35.334" endtime="20220406 20:53:35.415"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:button[type="submit"]</arg>
+<doc>Click element identified by ``locator``.</doc>
+<msg timestamp="20220406 20:53:35.416" level="INFO">Clicking element 'css:button[type="submit"]'.</msg>
+<status status="PASS" starttime="20220406 20:53:35.415" endtime="20220406 20:53:37.341"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css:[href="/logout"]</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20220406 20:53:37.802" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220406 20:53:37.350" endtime="20220406 20:53:37.802"/>
+</kw>
+<msg timestamp="20220406 20:53:37.803" level="FAIL">Element with locator 'css:[href="/logout"]' not found.</msg>
+<status status="FAIL" starttime="20220406 20:53:37.341" endtime="20220406 20:53:37.803"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220406 20:53:37.804" endtime="20220406 20:53:37.804"/>
+</kw>
+<doc>This test case verifies that user is able to successfully Login to the-internet.herokuapp</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220406 20:53:12.042" endtime="20220406 20:53:37.804">Element with locator 'css:[href="/logout"]' not found.</status>
+</test>
+<doc>Login Functionality</doc>
+<status status="FAIL" starttime="20220406 20:51:32.148" endtime="20220406 20:53:37.806"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="2" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="2" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220406 20:51:49.733" level="WARN">Multiple tests with name 'Verify Successful Login to OrangeHRM' executed in suite 'Login'.</msg>
+<msg timestamp="20220406 20:53:12.042" level="WARN">Multiple tests with name 'Verify Successful Login to the-internet.herokuapp' executed in suite 'Login'.</msg>
+</errors>
+</robot>
